@@ -6,13 +6,13 @@
     content: '';
     position: absolute;
 
-    top: -170px;
+    top: -154px;
     right: 106px;
 
     background-image: url(../../img/home-page/benefits-decor.png);
     background-repeat: no-repeat;
     width: 104px;
-    height: 200px;
+    height: 210px;
 
     z-index: -1;
 }
