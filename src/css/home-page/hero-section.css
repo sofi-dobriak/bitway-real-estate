@@ -1,0 +1,31 @@
+.hero-section {
+    margin-bottom: 100px;
+}
+
+.hero-section-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    max-width: 654px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.hero-section-text {
+    max-width: 456px;
+    margin-bottom: 30px;
+}
+
+.hero-section-button {
+    min-width: 262px;
+}
+
+.hero-image {
+    width: 100vw;
+    margin: 0 auto;
+}
