@@ -64,11 +64,12 @@
     --third-family: "Poppins", sans-serif;
 
     --button-text-color: #fff;
+    --button-border-color: #fff;
     --button-bg: #3e54eb;
     --button-bg-light: #fff;
     --button-secondary-bg-color: rgba(164, 166, 172, 0.05);
     --button-third-bg-color: rgba(255, 255, 255, 0.8);
-    ;
+
     --hover-button-bg: #fff;
 
     --border-color: rgba(164, 166, 172, 0.2);

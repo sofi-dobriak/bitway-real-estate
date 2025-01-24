@@ -36,14 +36,23 @@
 .searc-list {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 36px;
 }
 
 .searc-item {
     display: flex;
     align-items: center;
     gap: 16px;
+    padding-right: 36px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.searc-item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
 
 .searc-icon-container {
     width: 60px;

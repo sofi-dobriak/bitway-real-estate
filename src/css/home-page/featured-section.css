@@ -1,0 +1,107 @@
+.featured-section {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.featured-section::before {
+    content: '';
+    position: absolute;
+
+    background-image: url(/img/home-page/properties-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 52px;
+    left: 60px;
+    width: 130px;
+    height: 134px;
+}
+
+.featured-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.featured-text {
+    font-size: 16px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+}
+
+.featured-container {
+    position: relative;
+}
+
+.featured-build-container {
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+    width: 546px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 616px;
+    backdrop-filter: blur(20px);
+    background: var(--section-additional-bg-color);
+}
+
+.featured-build-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--main-text-color-light);
+    margin-bottom: 10px;
+}
+
+.featured-build-price {
+    color: var(--main-text-color-light);
+    margin-bottom: 10px;
+}
+
+.featured-build-text {
+    color: var(--main-text-color-light);
+    margin-bottom: 16px;
+    max-width: 746px;
+}
+
+.featured-icons-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.featured-icons-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-icon {
+    fill: var(--icon-light-color)
+}
+
+.featured-icon-text {
+    color: var(--main-text-color-light);
+}
+
+.featured-button {
+    font-size: 16px;
+    color: var(--main-text-color-light);
+
+    background: transparent;
+    border: 1px solid var(--button-border-color);
+    border-radius: 10px;
+    min-width: 182px;
+    height: 56px;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.featured-button:hover,
+.featured-button:focus {
+    background-color: var(--button-bg-light);
+    color: var(--hover-text-color)
+}

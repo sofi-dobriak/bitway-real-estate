@@ -38,10 +38,12 @@
     content: '';
     position: absolute;
 
-    top: -200px;
+    top: -190px;
     z-index: -1;
     right: 0;
     width: 248px;
     height: 347px;
     background-image: url(/img/home-page/hero-decor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
