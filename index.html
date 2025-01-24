@@ -3,20 +3,176 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/assets/logo-favicon-jMe9DkgR.svg" />
+    <link rel="icon" type="image/svg+xml" href="/bitway-real-estate/assets/logo-favicon-jMe9DkgR.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bitway Real Estate</title>
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-  <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-C6mjdckK.css">
+  <script type="module" crossorigin src="/bitway-real-estate/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/bitway-real-estate/assets/index-B5VYuLS5.css">
 </head>
 
 <body>
-    
+    <header class="header">
+    <div class="container">
+        <nav class="nav-container">
+            <a class="header-logo" href="../index.html">
+                <img src="../img/logo.svg" alt="Logo" width="148" height="60">
+            </a>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Agents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <a class="button header-button-link" type="buttont">Login</a>
+        </nav>
+    </div>
+</header>
 
     <main>
+        <section class="hero-section">
+    <div class="container">
+        <div class="hero-container">
+            <h1 class="hero-section-title">Let's start search for your dream home</h1>
+            <div class="hero-text-button-container">
+                <p class="hero-section-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout.
+                </p>
+                <button class="button hero-section-button">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <picture>
+        <source srcset="../../img/home-page/hero-image.webp 1x, ../../img/home-page/hero-image.webp 2x"
+            media="(min-width: 1200px)" type="webp" />
+        <source srcset="../../img/home-page/hero-image.jpg 1x, ../../img/home-page/hero-image.jpg 2x"
+            media="(min-width: 1200px)" type="jpg" />
+        <img class="hero-image" src="../../img/home-page/hero-image.jpg" alt="Hero image with build" />
+    </picture>
+</section>
+        <section class="benefit-section">
+    <div class="searc-section">
+        <ul class="searc-list">
+            <li class="searc-item">
+                <div class="searc-icon-container">
+                    <svg class="searc-icon" width="24" height="24">
+                        <use href="../../img/icons.svg#icon-location"></use>
+                    </svg>
+                </div>
+                <div class="searc-item-text-container">
+                    <h3 class="searc-item-title">Location</h3>
+                    <p class="searc-item-text">California, United State</p>
+                </div>
+            </li>
+            <li class="searc-item">
+                <div class="searc-icon-container">
+                    <svg class="searc-icon" width="24" height="24">
+                        <use href="../../img/icons.svg#icon-coin-dollar"></use>
+                    </svg>
+                </div>
+                <div class="searc-item-text-container">
+                    <h3 class="searc-item-title">Price</h3>
+                    <p class="searc-item-text">$1000 - $10,000</p>
+                </div>
+            </li>
+            <li class="searc-item">
+                <div class="searc-icon-container">
+                    <svg class="searc-icon" width="24" height="24">
+                        <use href="../../img/icons.svg#icon-home"></use>
+                    </svg>
+                </div>
+                <div class="searc-item-text-container">
+                    <h3 class="searc-item-title">Type of Property</h3>
+                    <p class="searc-item-text">Apartment</p>
+                </div>
+            </li>
+        </ul>
+        <button class="searc-button" type="button">
+            <svg class="searc-button-icon" width="24" height="24">
+                <use href="../../img/icons.svg#icon-search"></use>
+            </svg>
+        </button>
+    </div>
+
+    <div class="container benefit-section-container">
+
+        <div class="text-content-container">
+            <h2 class="benefit-section-title">Why should good house for you?</h2>
+            <p class="benefit-section-text">
+                Using it can make you sound like you have been studying english for a long time. Here's the challenge
+            </p>
+
+            <ul class="benefit-section-list">
+                <li class="benefit-section-item">
+                    <div class="benefit-section-icon-container">
+                        <svg class="benefit-section-icon" width="24" height="24">
+                            <use href="../../img/icons.svg#icon-medal"></use>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-section-item-title">Best Platform</h3>
+                    <p class="benefit-section-item-text">
+                        Using it can make you sound like you have been studyin english for a long time. Here's the
+                        challenge
+                    </p>
+                </li>
+                <li class="benefit-section-item">
+                    <div class="benefit-section-icon-container">
+                        <svg class="benefit-section-icon" width="24" height="24">
+                            <use href="../../img/icons.svg#icon-home-setting"></use>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-section-item-title">Guaranteed Service</h3>
+                    <p class="benefit-section-item-text">
+                        Using it can make you sound like you have been studyin english for a long time. Here's the
+                        challenge
+                    </p>
+                </li>
+                <li class="benefit-section-item">
+                    <div class="benefit-section-icon-container">
+                        <svg class="benefit-section-icon" width="24" height="24">
+                            <use href="../../img/icons.svg#icon-badge-percent"></use>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-section-item-title">Best Platform</h3>
+                    <p class="benefit-section-item-text">
+                        Using it can make you sound like you have been studyin english for a long time. Here's the
+                        challenge
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <picture>
+            <source
+                srcset="../../img/home-page/benefits-portrait.webp 1x, ../../img/home-page/benefits-portrait.webp 2x"
+                media="(min-width: 1200px)" type="webp" />
+            <source srcset="../../img/home-page/benefits-portrait.png 1x, ../../img/home-page/benefits-portrait.png 2x"
+                media="(min-width: 1200px)" type="jpg" />
+            <img class="benefit-section-image" src="../../img/home-page/benefits-portrait.png" alt="A man" />
+        </picture>
+    </div>
+</section>
     </main>
 
     
