@@ -1,0 +1,21 @@
+.login-image {
+    margin-bottom: 50px;
+}
+
+.forgot-password-link {
+    font-size: 14px;
+    color: var(--form-link-text-color);
+    margin-left: auto;
+}
+
+.forgot-password-link:hover,
+.forgot-password-link:focus {
+    text-decoration: underline;
+}
+
+.label-input-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 10px;
+}

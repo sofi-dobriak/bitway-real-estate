@@ -1,0 +1,50 @@
+<section class="create-page-section">
+    <div class="image-form-container">
+
+
+        <picture>
+            <source srcset="/img/create-page/login.webp 1x, /img/create-page/login@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp" />
+            <source srcset="/img/create-page/login.jpg 1x, /img/create-page/login@2x.jpg 2x" media="(min-width: 1200px)"
+                type="image/jpg" />
+            <img class="create-image" src="/img/create-page/login.jpg" alt="Hero image with build" />
+        </picture>
+
+        <div class="title-form-container">
+            <a class="login-logo" href="./index.html">
+                <img class="login-image" src="../../img/logo.svg" alt="Logo" width="148" height="60">
+            </a>
+
+            <h2 class="form-title">Welcome 👋</h2>
+            <p class="form-text">Please enter details</p>
+
+            <form class="create-form">
+                <div class="label-input-container">
+                    <label class="form-label" for="user-email">Email Address</label>
+                    <input class="form-input" type="email" name="user-email" id="user-email"
+                        placeholder="mark.allen@example.com" required>
+                </div>
+
+                <div class="label-input-container">
+                    <label class="form-label" for="user-password">Password</label>
+                    <input class="form-input" type="password" name="user-password" id="user-password" required>
+                </div>
+
+                <div class="label-input-checkbox">
+                    <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+                    <label class="form-label-checkbox" for="checkbox">Remember Me</label>
+
+                    <a class="forgot-password-link" href="#">Forgot Password?</a>
+                </div>
+
+                <button class="form-button button" type="submit">Login</button>
+            </form>
+
+            <p class="sign-in-text">
+                Already have an account?
+                <a class="sign-in-link" href="./create-account.html">Sign up</a>
+            </p>
+
+        </div>
+    </div>
+</section>
