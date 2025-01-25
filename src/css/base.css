@@ -72,7 +72,9 @@
 
     --hover-button-bg: #fff;
 
+    --form-border-color: #3e54eb;
     --hover-border-color: #fff;
+    --form-hover-border-color: rgba(62, 63, 67, 0.2);
     --border-color: rgba(164, 166, 172, 0.2);
     --footer-border-color: rgba(255, 255, 255, 0.2);
 
@@ -88,6 +90,7 @@
     --main-text-color: #0f1015;
     --main-text-color-light: #fff;
     --secondary-text-color: #a4a6ac;
+    --form-link-text-color: #3e54eb;
     --hover-text-color: #3e54eb;
 
     --section-main-bg-color: #fff;

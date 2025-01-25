@@ -1,0 +1,60 @@
+<section class="create-page-section">
+    <div class="image-form-container">
+        <a class="create-logo" href="./index.html">
+            <img class="logo-image" src="../../img/logo.svg" alt="Logo" width="148" height="60">
+        </a>
+
+        <picture>
+            <source srcset="/img/create-page/create.webp 1x, /img/create-page/create@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp" />
+            <source srcset="/img/create-page/create.jpg 1x, /img/create-page/create@2x.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpg" />
+            <img class="create-image" src="/img/create-page/create.jpg" alt="Hero image with build" />
+        </picture>
+
+        <div class="title-form-container">
+            <h2 class="form-title">Create New Account</h2>
+            <p class="form-text">Please enter details</p>
+
+            <form class="create-form">
+                <div class="label-input-container">
+                    <label class="form-label" for="user-name">First Name</label>
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Mark" required>
+                </div>
+
+                <div class="label-input-container">
+                    <label class="form-label" for="user-surname">Last Name</label>
+                    <input class="form-input" type="text" name="user-surname" id="user-surname" placeholder="Allen"
+                        required>
+                </div>
+
+                <div class="label-input-container">
+                    <label class="form-label" for="user-email">Email Address</label>
+                    <input class="form-input" type="email" name="user-email" id="user-email"
+                        placeholder="mark.allen@example.com" required>
+                </div>
+
+                <div class="label-input-container">
+                    <label class="form-label" for="user-password">Password</label>
+                    <input class="form-input" type="password" name="user-password" id="user-password" required>
+                </div>
+
+                <div class="label-input-checkbox-container">
+                    <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+                    <label class="form-label-checkbox" for="checkbox">
+                        I agree to the
+                        <a class="form-input-link" href="#">Terms &amp; Conditions</a>
+                    </label>
+                </div>
+
+                <button class="form-button button" type="submit">Signup</button>
+            </form>
+
+            <p class="sign-in-text">
+                Already have an account?
+                <a class="sign-in-link" href="#">Sign in</a>
+            </p>
+
+        </div>
+    </div>
+</section>
