@@ -23,8 +23,6 @@
     gap: 20px;
 }
 
-.properties-nav-item {}
-
 .properties-icon-button {
     display: flex;
     align-items: center;
@@ -131,8 +129,6 @@
     gap: 10px;
 }
 
-.owner-image {}
-
 .owner-name {
     font-weight: 300;
     font-size: 16px;
@@ -143,8 +139,6 @@
     align-items: center;
     gap: 8px;
 }
-
-.action-item {}
 
 .action-button {
     background-color: transparent;
@@ -199,4 +193,17 @@
     fill: none;
     stroke-width: 1.5px;
     stroke: var(--icon-dark-color);
+}
+
+.action-button:hover .action-icon,
+.action-button:focus .action-icon {
+    fill: var(--button-bg);
+}
+
+.action-button:hover .action-icon.heart,
+.action-button:focus .action-icon.heart,
+.action-button:hover .action-icon.share,
+.action-button:focus .action-icon.share {
+    fill: none;
+    stroke: var(--button-bg);
 }
