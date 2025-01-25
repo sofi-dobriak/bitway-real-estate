@@ -45,14 +45,20 @@
     gap: 16px;
     padding-right: 36px;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.searc-item:hover .item-options-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .searc-item:last-child {
     padding-right: 0;
     border-right: none;
 }
-
-
 
 .searc-icon-container {
     width: 60px;
@@ -113,6 +119,75 @@
     fill: var(--icon-light-color)
 }
 
+/* Options list */
+
+.options-icon-container {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--section-secondary-bg-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-options-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 55px 110px 0 rgba(0, 0, 0, 0.01), 0 55px 110px 0 rgba(0, 0, 0, 0.03);
+    background-color: var(--section-main-bg-color);
+
+    position: absolute;
+    top: 133%;
+    left: -20px;
+    z-index: 20;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.item-options-container.coin {
+    left: -44px;
+}
+
+.searc-item:hover .item-options-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.options-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.options-item:last-child {
+    margin-bottom: 0;
+}
+
+.options-item:hover,
+.options-item:focus {
+    border-radius: 10px;
+    background-color: rgba(69, 75, 102, 0.1);
+}
+
+.options-icon {
+    fill: none;
+    stroke-width: 1.5px;
+    stroke: var(--icon-dark-color);
+}
+
+.options-text {
+    font-size: 16px;
+    color: var(--main-text-color);
+}
+
 /* End search section */
 
 .benefit-section-container {
@@ -137,8 +212,6 @@
     align-items: center;
     gap: 40px;
 }
-
-.benefit-section-list {}
 
 .benefit-section-item {
     border-bottom: 1px solid rgba(164, 166, 172, 0.2);
