@@ -72,7 +72,9 @@
 
     --hover-button-bg: #fff;
 
+    --hover-border-color: #fff;
     --border-color: rgba(164, 166, 172, 0.2);
+    --footer-border-color: rgba(255, 255, 255, 0.2);
 
     --icon-star-color: #f6b34d;
     --icon-light-color: #fff;

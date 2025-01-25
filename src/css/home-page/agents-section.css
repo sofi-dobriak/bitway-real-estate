@@ -1,0 +1,94 @@
+.agents-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.agents-section::after {
+    position: absolute;
+    content: '';
+
+    bottom: -20px;
+    right: 0;
+    width: 104px;
+    height: 210px;
+
+    background-image: url(../../img/home-page/benefits-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.agents-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.agents-text {
+    max-width: 600px;
+    margin-bottom: 50px;
+    color: var(--secondary-text-color);
+}
+
+.agents-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.agents-item {
+    position: relative;
+    max-width: 340px;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.agents-item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -30px;
+    width: 1px;
+    height: 500px;
+    background-color: var(--border-color);
+}
+
+.agents-item:last-child::after {
+    display: none;
+}
+
+.agents-item:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.hero-image-container {}
+
+.agents-image {
+    margin-bottom: 20px;
+}
+
+.agents-item:nth-child(2) .agents-image {
+    margin-bottom: 0;
+}
+
+.agent-name {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.agent-profession {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.agent-description {
+    font-size: 16px;
+}
+
+.agents-item:nth-child(2) .agent-description {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,120 @@
+.footer {
+    background-color: var(--section-additional-bg-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--footer-border-color);
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    line-height: 1.5;
+    color: var(--main-text-color-light);
+    font-size: 16px;
+    max-width: 272px;
+}
+
+.about-title,
+.service-title,
+.location-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--main-text-color-light);
+    margin-bottom: 20px;
+}
+
+.about-item,
+.service-item {
+    margin-bottom: 16px;
+}
+
+.about-item:last-child,
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+.about-link,
+.service-link,
+.location-maps {
+    font-size: 16px;
+    color: var(--main-text-color-light);
+}
+
+.about-link:hover,
+.about-link:focus,
+.service-link:hover,
+.service-link:focus,
+.location-maps:hover,
+.location-maps:focus,
+.term-link:hover,
+.term-link:focus,
+.privacy-link:hover,
+.privacy-link:focus {
+    text-decoration: underline;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-link {
+    background-color: var(--section-main-bg-color);
+    border-radius: 40px;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--section-main-bg-color);
+    transition: border-color .3s ease, background-color .3s ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+    border-color: var(--hover-border-color);
+    background-color: var(--button-bg);
+}
+
+.social-icon {
+    fill: var(--icon-blue-color);
+    transition: fill .3s ease;
+
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--icon-light-color)
+}
+
+.copy-term-privacy-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-text,
+.term-link,
+.privacy-link {
+    font-size: 16px;
+    color: var(--main-text-color-light);
+}
+
+.term-privacy-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
