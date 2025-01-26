@@ -11,12 +11,13 @@ refs.verifyButton.addEventListener('click', e => {
   const markup = `
   <div class="modal-window">
     <picture>
-        <source srcset="/img/create-page/modal-check-img.webp 1x, /img/create-page/modal-check-img@2x.webp 2x"
+        <source srcset="./img/create-page/modal-check-img.webp 1x, ./img/create-page/modal-check-img@2x.webp 2x"
             media="(min-width: 1200px)" type="image/webp" />
-        <source srcset="/img/create-page/modal-check-img.png 1x, /img/create-page/modal-check-img@2x.png 2x"
+        <source srcset="./img/create-page/modal-check-img.png 1x, ./img/create-page/modal-check-img@2x.png 2x"
             media="(min-width: 1200px)" type="image/png" />
-        <img class="modal-check-image" src="/img/create-page/modal-check-img.png" alt="A check image" />
+        <img class="modal-check-image" src="./img/create-page/modal-check-img.png" alt="A check image" />
     </picture>
+
 
     <h2 class="modal-title">Password Changed Successfully</h2>
     <p class="modal-text">Your password has been updated successfully</p>
