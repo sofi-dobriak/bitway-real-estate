@@ -12,4 +12,4 @@ import{b as a}from"./vendor-CAXQE2hQ.js";(function(){const r=document.createElem
     <p class="modal-text">Your password has been updated successfully</p>
     <a class="modal-link button" href="./login-account.html">Back to Login</a>
 </div>`).show()});
-//# sourceMappingURL=main-CR8ahasi.js.map
+//# sourceMappingURL=main-B72UU457.js.map
