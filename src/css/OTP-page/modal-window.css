@@ -25,3 +25,8 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+.basicLightbox {
+    backdrop-filter: blur(10px) !important;
+    background: rgba(164, 166, 172, 0.2) !important;
+}
