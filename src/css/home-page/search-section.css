@@ -70,7 +70,7 @@
     opacity: 0.5;
 }
 
-.searc-button {
+.searc-link {
     border: 1px solid var(--button-bg-light);
     background-color: var(--button-bg-light);
     border-radius: 10px;
@@ -82,20 +82,21 @@
     justify-content: center;
 
     margin-left: 40px;
+    cursor: pointer;
     transition: background-color .3s ease, fill .3s ease;
 }
 
-.searc-button:hover,
-.searc-button:focus {
+.searc-link:hover,
+.searc-link:focus {
     background-color: var(--button-bg)
 }
 
-.searc-button-icon {
+.searc-link-icon {
     fill: var(--icon-blue-color);
 }
 
-.searc-button:hover .searc-button-icon,
-.searc-button:focus .searc-button-icon {
+.searc-link:hover .searc-link-icon,
+.searc-link:focus .searc-link-icon {
     fill: var(--icon-light-color)
 }
 
