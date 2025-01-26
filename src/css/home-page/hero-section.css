@@ -22,7 +22,7 @@
 }
 
 .hero-section-button {
-    min-width: 262px;
+    max-width: 262px;
 }
 
 .hero-image-container {
