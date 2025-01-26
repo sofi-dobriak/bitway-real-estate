@@ -1,0 +1,36 @@
+<section class="create-page-section">
+    <div class="image-form-container">
+
+        <picture>
+            <source srcset="/img/create-page/code.webp 1x, /img/create-page/code@2x.webp 2x" media="(min-width: 1200px)"
+                type="image/webp" />
+            <source srcset="/img/create-page/code.jpg 1x, /img/create-page/code@2x.jpg 2x" media="(min-width: 1200px)"
+                type="image/jpg" />
+            <img class="create-image" src="/img/create-page/code.jpg" alt="Hero image with build" />
+        </picture>
+
+        <div class="title-form-container">
+            <a class="back-link" href="./login-account.html">
+                <svg class="back-link-icon" width="24" height="24">
+                    <use href="/img/icons.svg#icon-arrow-left"></use>
+                </svg>
+                Back
+            </a>
+
+            <h2 class="form-title">Enter OTP</h2>
+            <p class="form-text forgot-password-text">We have share a code of your registered email address
+                mark.allen@example.com</p>
+
+            <form class="create-form">
+                <div class="code-input-container">
+                    <input class="input-code" type="text" name="user-code" placeholder="1" required>
+                    <input class="input-code" type="text" name="user-code" placeholder="2" required>
+                    <input class="input-code" type="text" name="user-code" placeholder="3" required>
+                    <input class="input-code" type="text" name="user-code" placeholder="2" required>
+                    <input class="input-code" type="text" name="user-code" placeholder="5" required>
+                </div>
+                <button class="form-button button js-verify-button" type="button">Verify</button>
+            </form>
+        </div>
+    </div>
+</section>

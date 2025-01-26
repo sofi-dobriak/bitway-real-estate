@@ -222,8 +222,6 @@ h2 {
 
     min-width: 445px;
     height: 56px;
-    background-color: var();
-
 }
 
 .sign-in-text {
@@ -240,4 +238,27 @@ h2 {
 .form-input-link:hover,
 .form-input-link:focus {
     text-decoration: underline;
+}
+
+.back-link {
+    margin-bottom: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color .3s ease;
+}
+
+
+.back-link:hover,
+.back-link:focus {
+    color: var(--hover-text-color)
+}
+
+.back-link-icon {
+    transition: fill .3s ease;
+}
+
+.back-link:hover .back-link-icon,
+.back-link:focus .back-link-icon {
+    fill: var(--hover-text-color)
 }

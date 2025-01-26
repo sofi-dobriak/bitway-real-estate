@@ -14,5 +14,8 @@
 
 @import url('./create-account/create-form.css');
 @import url('./login-page/login-form.css');
+@import url('./forgot-password/forgot-password.css');
+@import url('./OTP-page/OTP-page.css');
+@import url('./OTP-page/modal-window.css');
 
 @import url('./footer.css');

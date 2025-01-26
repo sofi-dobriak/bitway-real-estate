@@ -1,0 +1,27 @@
+.modal-window {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    width: 432px;
+    height: 332px;
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.02), 0 10px 40px -4px rgba(16, 24, 40, 0.02);
+    background: var(--section-main-bg-color);
+    padding: 30px 20px 20px;
+}
+
+.modal-check-image {
+    margin: 0 auto 20px;
+}
+
+.modal-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}

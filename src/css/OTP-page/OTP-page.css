@@ -1,0 +1,24 @@
+.code-input-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.input-code {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition: border-color .3s ease;
+}
+
+.input-code::placeholder {
+    text-align: center;
+}
+
+.input-code:hover,
+.input-code:focus {
+    outline: none;
+    border-color: var(--form-border-color);
+}
