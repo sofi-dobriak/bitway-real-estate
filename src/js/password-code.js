@@ -1,3 +1,5 @@
+import * as basicLightbox from 'basiclightbox';
+
 const refs = {
   verifyButton: document.querySelector('.js-verify-button'),
 };
