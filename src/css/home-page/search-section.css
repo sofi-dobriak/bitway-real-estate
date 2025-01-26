@@ -1,10 +1,10 @@
-.searc-section {
+.search-section {
     position: relative;
     top: -150px;
     left: 160px;
     border-radius: 10px;
     padding: 20px;
-    max-width: 944px;
+    max-width: 986px;
     backdrop-filter: blur(16px);
     background-color: var(--section-additional-bg-color);
 
@@ -13,13 +13,14 @@
     z-index: 20;
 }
 
-.searc-list {
+.search-list {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     gap: 36px;
 }
 
-.searc-item {
+.search-item {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -29,18 +30,18 @@
     cursor: pointer;
 }
 
-.searc-item:hover .item-options-container {
+.search-item:hover .item-options-container {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.searc-item:last-child {
+.search-item:last-child {
     padding-right: 0;
     border-right: none;
 }
 
-.searc-icon-container {
+.search-icon-container {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -51,26 +52,26 @@
     justify-content: center;
 }
 
-.searc-icon {
+.search-icon {
     fill: none;
     stroke-width: 1.5px;
     stroke: var(--icon-light-color);
 }
 
-.searc-item-title {
+.search-item-title {
     font-weight: 700;
     font-size: 20px;
     color: var(--main-text-color-light);
     margin-bottom: 6px;
 }
 
-.searc-item-text {
+.search-item-text {
     font-size: 16px;
     color: var(--main-text-color-light);
     opacity: 0.5;
 }
 
-.searc-link {
+.search-link {
     border: 1px solid var(--button-bg-light);
     background-color: var(--button-bg-light);
     border-radius: 10px;
@@ -81,22 +82,22 @@
     align-items: center;
     justify-content: center;
 
-    margin-left: 40px;
+    margin-left: auto;
     cursor: pointer;
     transition: background-color .3s ease, fill .3s ease;
 }
 
-.searc-link:hover,
-.searc-link:focus {
+.search-link:hover,
+.search-link:focus {
     background-color: var(--button-bg)
 }
 
-.searc-link-icon {
+.search-link-icon {
     fill: var(--icon-blue-color);
 }
 
-.searc-link:hover .searc-link-icon,
-.searc-link:focus .searc-link-icon {
+.search-link:hover .search-link-icon,
+.search-link:focus .search-link-icon {
     fill: var(--icon-light-color)
 }
 
@@ -133,7 +134,7 @@
     left: -44px;
 }
 
-.searc-item:hover .item-options-container {
+.search-item:hover .item-options-container {
     opacity: 1;
     visibility: visible;
 }

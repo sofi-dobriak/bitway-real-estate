@@ -1,24 +1,52 @@
-import * as basicLightbox from 'basiclightbox';
-
 const refs = {
   verifyButton: document.querySelector('.js-verify-button'),
+  modalWindowBackDrop: document.querySelector('.modal-backdrop'),
+  inputsContainer: document.querySelector('.code-input-container'),
+  firstInput: document.querySelector('.input-code'),
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  refs.firstInput.focus();
+});
+
+refs.inputsContainer.addEventListener('input', e => {
+  if (e.target.classList.contains('input-code')) {
+    const inputs = Array.from(document.querySelectorAll('.input-code'));
+    const index = inputs.indexOf(e.target);
+
+    if (e.target.value.length === 1 && index < inputs.length - 1) {
+      inputs[index + 1].focus();
+    }
+  }
+});
 
 refs.verifyButton.addEventListener('click', e => {
   e.preventDefault();
 
-  const markup = `
-  <div class="modal-window">
-<picture>
-      <source srcset="http://localhost:3000/img/create-page/modal-check-img.webp 1x, http://localhost:3000/img/create-page/modal-check-img@2x.webp 2x" type="image/webp" />
-      <source srcset="http://localhost:3000/img/create-page/modal-check-img.png 1x, http://localhost:3000/img/create-page/modal-check-img@2x.png 2x" type="image/png" />
-      <img class="modal-check-image" src="http://localhost:3000/img/create-page/modal-check-img.png" alt="A check image" />
-  </picture>
-  <h2 class="modal-title">Password Changed Successfully</h2>
-    <p class="modal-text">Your password has been updated successfully</p>
-    <a class="modal-link button" href="./login-account.html">Back to Login</a>
-</div>`;
+  const inputs = Array.from(document.querySelectorAll('.input-code'));
+  const allFilled = inputs.every(input => input.value.length === 1);
 
-  const instance = basicLightbox.create(markup);
-  instance.show();
+  let errorMessage = refs.inputsContainer.querySelector('.forgot-message-text');
+
+  if (allFilled) {
+    refs.modalWindowBackDrop.classList.add('is-open');
+  } else {
+    if (!errorMessage) {
+      refs.inputsContainer.insertAdjacentHTML('afterend', messageTemplate());
+      errorMessage = refs.inputsContainer.nextElementSibling;
+      errorMessage.style.marginBottom = '14px';
+
+      setTimeout(() => {
+        errorMessage.classList.add('visible');
+      }, 0);
+    }
+  }
 });
+
+refs.modalWindowBackDrop.addEventListener('click', () => {
+  refs.modalWindowBackDrop.classList.remove('is-open');
+});
+
+function messageTemplate() {
+  return `<p class="forgot-message-text">Please fill in all the inputs!</p>`;
+}

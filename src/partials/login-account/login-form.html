@@ -1,7 +1,6 @@
 <section class="create-page-section">
     <div class="image-form-container">
 
-
         <picture>
             <source srcset="/img/create-page/login.webp 1x, /img/create-page/login@2x.webp 2x"
                 media="(min-width: 1200px)" type="image/webp" />
@@ -18,7 +17,7 @@
             <h2 class="form-title">Welcome 👋</h2>
             <p class="form-text">Please enter details</p>
 
-            <form class="create-form">
+            <form class="create-form js-login-form">
                 <div class="label-input-container">
                     <label class="form-label" for="user-email">Email Address</label>
                     <input class="form-input" type="email" name="user-email" id="user-email"
@@ -31,13 +30,13 @@
                 </div>
 
                 <div class="label-input-checkbox">
-                    <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+                    <input class="form-input-checkbox" type="checkbox" name="checkbox" id="checkbox">
                     <label class="form-label-checkbox" for="checkbox">Remember Me</label>
 
                     <a class="forgot-password-link" href="./forgot-password.html">Forgot Password?</a>
                 </div>
 
-                <button class="form-button button" type="submit">Login</button>
+                <button class="form-button button js-login-button" type="submit">Login</button>
             </form>
 
             <p class="sign-in-text">

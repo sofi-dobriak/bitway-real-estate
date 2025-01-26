@@ -1,6 +1,6 @@
 const refs = {
-  searchSection: document.querySelector('.searc-section'),
-  searchList: document.querySelector('.searc-list'),
+  searchSection: document.querySelector('.search-section'),
+  searchList: document.querySelector('.search-list'),
 };
 
 refs.searchSection.addEventListener('mouseenter', () => {
@@ -17,10 +17,10 @@ refs.searchList.addEventListener('click', e => {
   const optionsItem = e.target.closest('.options-item');
 
   if (optionsItem) {
-    const searcitem = optionsItem.closest('.searc-item');
+    const searchitem = optionsItem.closest('.search-item');
     const selectedText = optionsItem.querySelector('.options-text');
 
-    searcitem.querySelector('.searc-item-text').textContent =
+    searchitem.querySelector('.search-item-text').textContent =
       selectedText.textContent;
   }
 });
