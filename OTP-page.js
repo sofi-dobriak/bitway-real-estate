@@ -1,12 +1,2 @@
-import"./assets/styles-B6CXeTBy.js";import{b as t}from"./assets/vendor-CAXQE2hQ.js";const c={verifyButton:document.querySelector(".js-verify-button")};c.verifyButton.addEventListener("click",e=>{e.preventDefault(),t.create(`
-  <div class="modal-window">
-<picture>
-      <source srcset="http://localhost:3000/img/create-page/modal-check-img.webp 1x, http://localhost:3000/img/create-page/modal-check-img@2x.webp 2x" type="image/webp" />
-      <source srcset="http://localhost:3000/img/create-page/modal-check-img.png 1x, http://localhost:3000/img/create-page/modal-check-img@2x.png 2x" type="image/png" />
-      <img class="modal-check-image" src="http://localhost:3000/img/create-page/modal-check-img.png" alt="A check image" />
-  </picture>
-  <h2 class="modal-title">Password Changed Successfully</h2>
-    <p class="modal-text">Your password has been updated successfully</p>
-    <a class="modal-link button" href="./login-account.html">Back to Login</a>
-</div>`).show()});
+import"./assets/styles-CcuUsfU_.js";const e={verifyButton:document.querySelector(".js-verify-button"),modalWindowBackDrop:document.querySelector(".modal-backdrop"),inputsContainer:document.querySelector(".code-input-container"),firstInput:document.querySelector(".input-code")};document.addEventListener("DOMContentLoaded",()=>{e.firstInput.focus()});e.inputsContainer.addEventListener("input",t=>{if(t.target.classList.contains("input-code")){const n=Array.from(document.querySelectorAll(".input-code")),o=n.indexOf(t.target);t.target.value.length===1&&o<n.length-1&&n[o+1].focus()}});e.verifyButton.addEventListener("click",t=>{t.preventDefault();const o=Array.from(document.querySelectorAll(".input-code")).every(r=>r.value.length===1);let i=e.inputsContainer.querySelector(".forgot-message-text");o?e.modalWindowBackDrop.classList.add("is-open"):i||(e.inputsContainer.insertAdjacentHTML("afterend",s()),i=e.inputsContainer.nextElementSibling,i.style.marginBottom="14px",setTimeout(()=>{i.classList.add("visible")},0))});e.modalWindowBackDrop.addEventListener("click",()=>{e.modalWindowBackDrop.classList.remove("is-open")});function s(){return'<p class="forgot-message-text">Please fill in all the inputs!</p>'}
 //# sourceMappingURL=OTP-page.js.map

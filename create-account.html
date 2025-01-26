@@ -9,9 +9,9 @@
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-  <script type="module" crossorigin src="/bitway-real-estate/assets/styles-B6CXeTBy.js"></script>
-  <script type="module" crossorigin src="/bitway-real-estate/assets/main-DaUn6hFE.js"></script>
-  <link rel="stylesheet" crossorigin href="/bitway-real-estate/assets/styles-BO5ani0z.css">
+  <script type="module" crossorigin src="/bitway-real-estate/create-account.js"></script>
+  <link rel="modulepreload" crossorigin href="/bitway-real-estate/assets/styles-CcuUsfU_.js">
+  <link rel="stylesheet" crossorigin href="/bitway-real-estate/assets/styles-Ava5RhDy.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <h2 class="form-title">Create New Account</h2>
             <p class="form-text">Please enter details</p>
 
-            <form class="create-form">
+            <form class="create-form js-create-form">
                 <div class="label-input-container">
                     <label class="form-label" for="user-name">First Name</label>
                     <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Mark" required>
@@ -66,7 +66,7 @@
                     </label>
                 </div>
 
-                <button class="form-button button" type="submit">Signup</button>
+                <button class="form-button button js-create-button" type="submit">Signup</button>
             </form>
 
             <p class="sign-in-text">
@@ -77,6 +77,21 @@
         </div>
     </div>
 </section>
+        <div class="modal-backdrop">
+    <div class="modal-window">
+        <picture>
+            <source srcset="data:image/webp;base64,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 1x, /bitway-real-estate/assets/modal-check-img@2x-BFW3vZgQ.webp 2x"
+                media="(min-width: 1200px)" type="image/webp" />
+            <source srcset="/bitway-real-estate/assets/modal-check-img-zd-Vor9x.png 1x, /bitway-real-estate/assets/modal-check-img@2x-C1OIfnMv.png 2x"
+                media="(min-width: 1200px)" type="image/png" />
+            <img class="modal-check-image" src="/bitway-real-estate/assets/modal-check-img-zd-Vor9x.png" alt="A check image" />
+        </picture>
+
+        <h2 class="modal-title">Congratulations!</h2>
+        <p class="modal-text">Account successfully created</p>
+        <a class="modal-link button" href="./index.html">Back to home page</a>
+    </div>
+</div>
     </main>
 
 
