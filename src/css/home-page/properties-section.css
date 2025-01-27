@@ -207,3 +207,23 @@
     fill: none;
     stroke: var(--button-bg);
 }
+
+.action-button.active .plus {
+    display: none;
+}
+
+.action-button.active .check {
+    display: block;
+}
+
+.action-button.active .action-icon.heart {
+    fill: var(--icon-blue-color);
+    stroke-width: 1.5px;
+    stroke: var(--icon-blue-color);
+}
+
+.share-modal-button {
+    min-width: 392px;
+    height: 56px;
+    margin: 0 auto;
+}

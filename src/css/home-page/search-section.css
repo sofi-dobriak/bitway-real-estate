@@ -58,6 +58,15 @@
     stroke: var(--icon-light-color);
 }
 
+.plus {
+    display: block;
+}
+
+.check {
+    fill: var(--icon-light-color);
+    display: none;
+}
+
 .search-item-title {
     font-weight: 700;
     font-size: 20px;

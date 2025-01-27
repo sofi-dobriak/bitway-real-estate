@@ -1,17 +1,17 @@
-const refs = {
-  searchSection: document.querySelector('.search-section'),
-  searchList: document.querySelector('.search-list'),
-};
+'use strict';
 
-refs.searchSection.addEventListener('mouseenter', () => {
+const searchSection = document.querySelector('.search-section');
+const searchList = document.querySelector('.search-list');
+
+searchSection.addEventListener('mouseenter', () => {
   document.body.style.backgroundColor = 'rgba(15, 16, 21, 0.1)';
 });
 
-refs.searchSection.addEventListener('mouseleave', () => {
+searchSection.addEventListener('mouseleave', () => {
   document.body.style.backgroundColor = 'transparent';
 });
 
-refs.searchList.addEventListener('click', e => {
+searchList.addEventListener('click', e => {
   e.preventDefault();
 
   const optionsItem = e.target.closest('.options-item');
