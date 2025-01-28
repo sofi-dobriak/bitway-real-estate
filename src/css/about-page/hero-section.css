@@ -1,0 +1,20 @@
+.abou-hero-section {
+    background-image: url("/img/about-page/about-hero-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+.about-section-title {
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+
+    color: var(--main-text-color-light);
+}

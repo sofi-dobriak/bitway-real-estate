@@ -1,0 +1,57 @@
+.about-field-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.about-field-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 106px;
+    background-image: url(/img/home-page/benefits-decor.png);
+    background-repeat: no-repeat;
+    width: 104px;
+    height: 210px;
+    z-index: -1;
+}
+
+.about-field-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--main-text-color);
+    max-width: 652px;
+    margin-bottom: 10px;
+}
+
+.about-field-text {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    max-width: 652px;
+    margin-bottom: 50px;
+}
+
+.about-section-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-section-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+    flex-basis: calc((100% - 60px) / 2);
+}
+
+.about-section-item-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main-text-color);
+    margin-bottom: 6px;
+}
+
+.about-section-item-text {
+    font-size: 16px;
+    color: var(--secondary-text-color);
+}

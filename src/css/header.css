@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .nav-container {
@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: space-between;
 }
-
-.header-logo {}
 
 .nav-list {
     display: flex;

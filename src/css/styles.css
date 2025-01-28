@@ -12,6 +12,9 @@
 @import url('./home-page/agents-section.css');
 @import url('./home-page/testimonials-section.css');
 
+@import url('./about-page/hero-section.css');
+@import url('./about-page/about-field-section.css');
+
 @import url('./create-account/create-form.css');
 @import url('./login-page/login-form.css');
 @import url('./forgot-password/forgot-password.css');
